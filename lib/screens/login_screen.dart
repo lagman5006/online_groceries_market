@@ -70,34 +70,34 @@ class LoginScreen extends StatelessWidget {
       ),
     );
   }
-}
 
-Container buildLoginWithSocialMedia({
-  required String svgPath,
-  required String text,
-  required Color color,
-}) {
-  return Container(
-    height: 67,
-    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
-    decoration: BoxDecoration(
-      color: color,
-      borderRadius: BorderRadius.circular(20),
-    ),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      spacing: 20,
-      children: [
-        SvgPicture.asset(svgPath),
-        Text(
-          text,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-            fontFamily: "Gilroy",
+  Container buildLoginWithSocialMedia({
+    required String svgPath,
+    required String text,
+    required Color color,
+  }) {
+    return Container(
+      height: 67,
+      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        spacing: 20,
+        children: [
+          SvgPicture.asset(svgPath),
+          Text(
+            text,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18,
+              fontFamily: "Gilroy",
+            ),
           ),
-        ),
-      ],
-    ),
-  );
+        ],
+      ),
+    );
+  }
 }
