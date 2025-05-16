@@ -28,6 +28,7 @@ flutter:
     - assets/images/
     - assets/fonts/
     - assets/svgs/
+    - assets/svgs_explorer/
 
   fonts:
     - family: Gilroy

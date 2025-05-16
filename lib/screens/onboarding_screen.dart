@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:online_groceries_market/extensions/context_ext.dart';
 import 'package:online_groceries_market/screens/login_screen.dart';
+import 'package:online_groceries_market/screens/navigation_screen.dart';
+import 'package:online_groceries_market/screens/shop_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -83,7 +85,7 @@ class OnboardingScreen extends StatelessWidget {
               onTap: () {
                 Navigator.pushReplacement(
                   context,
-                  CupertinoPageRoute(builder: (context) => LoginScreen()),
+                  CupertinoPageRoute(builder: (context) => NavigationScreen()),
                 );
               },
               child: Container(
