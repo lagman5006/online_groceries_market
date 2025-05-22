@@ -106,7 +106,7 @@ class _CartScreenState extends State<CartScreen> {
           },
           cost: 1.99,
           description: "4psc, Price",
-          imagePath: "assets/images/egg.png",
+          imagePath: "assets/images/Eggs.png",
           itemName: "Egg Chicken Red",
         ),
         CartItemWidget(

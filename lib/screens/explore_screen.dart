@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:online_groceries_market/screens/products.dart';
 import 'package:online_groceries_market/utils/resource_media.dart';
 
 class ExploreScreen extends StatelessWidget {
@@ -49,14 +50,14 @@ class ExploreScreen extends StatelessWidget {
                     "Egg chicken Red",
                     "4pcs, Price",
                     "\$1.99",
-                    "assets/svgs/plus.svg",
+                    "assets/svgs/plus.svg",context,
                   ),
                   containers(
                     ResourceMedia.whiteEggs,
                     "Egg chicken White",
                     "180g, Price",
                     "\$1.50",
-                    "assets/svgs/plus.svg",
+                    "assets/svgs/plus.svg",context,
                   ),
                 ],
               ),
@@ -68,7 +69,7 @@ class ExploreScreen extends StatelessWidget {
                         "     ",
                     "30gm, Price",
                     "\$15.99",
-                    "assets/svgs/plus.svg",
+                    "assets/svgs/plus.svg",context,
                   ),
                   containers(
                     ResourceMedia.noodlesImage,
@@ -76,7 +77,7 @@ class ExploreScreen extends StatelessWidget {
                         "    ",
                     "2L, Price",
                     "\$15.99",
-                    "assets/svgs/plus.svg",
+                    "assets/svgs/plus.svg",context,
                   ),
                 ],
               ),
@@ -87,7 +88,7 @@ class ExploreScreen extends StatelessWidget {
                     "Mayonnais Eggless",
                     "2pcs, Price",
                     "\$5.90",
-                    "assets/svgs/plus.svg",
+                    "assets/svgs/plus.svg",context,
                   ),
                   containers(
                     ResourceMedia.noodles2Image,
@@ -95,7 +96,7 @@ class ExploreScreen extends StatelessWidget {
                         "         ",
                     "1pcs, Price",
                     "\$10.00",
-                    "assets/svgs/plus.svg",
+                    "assets/svgs/plus.svg",context,
                   ),
                 ],
               ),
@@ -113,6 +114,7 @@ Container containers(
   String secondText,
   String price,
   String plus,
+    BuildContext context
 ) {
   return Container(
     margin: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
@@ -149,7 +151,12 @@ Container containers(
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
             ),
             Spacer(),
-            SvgPicture.asset(plus, width: 30, height: 30),
+            InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Prodacts()));
+                  print("ishlayapti");
+                },
+                child: SvgPicture.asset(plus, width: 30, height: 30)),
             SizedBox(width: 15),
           ],
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_groceries_market/screens/explore_screen.dart';
+import 'package:online_groceries_market/screens/products.dart';
 import 'package:online_groceries_market/utils/resource_colors.dart';
 
 class ShopScreen extends StatelessWidget {
@@ -108,20 +109,20 @@ class ShopScreen extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    containers("assets/images/banan.png", 'Organic Bananas', "7pcs, Priceg", "\$ 4.99", "assets/svgs/plus.svg"),
-                    containers("assets/images/apples.png", 'Red Apple', "1kg, Priceg", "\$ 4.99", "assets/svgs/plus.svg"),
+                    containers("assets/images/banan.png", 'Organic Bananas', "7pcs, Priceg", "\$ 4.99", "assets/svgs/plus.svg",context),
+                    containers("assets/images/apples.png", 'Red Apple', "1kg, Priceg", "\$ 4.99", "assets/svgs/plus.svg",context),
                   ],
                 ),
                 Row(
                   children: [
-                    containers("assets/images/pepper.png", 'Organic Bananas', "7pcs, Priceg", "\$ 4.99", "assets/svgs/plus.svg"),
-                    containers("assets/images/ginger.png", 'Organic Bananas', "7pcs, Priceg", "\$ 4.99", "assets/svgs/plus.svg"),
+                    containers("assets/images/pepper.png", 'Organic Bananas', "7pcs, Priceg", "\$ 4.99", "assets/svgs/plus.svg",context),
+                    containers("assets/images/ginger.png", 'Organic Bananas', "7pcs, Priceg", "\$ 4.99", "assets/svgs/plus.svg",context),
                   ],
                 ),
                 Row(
                   children: [
-                    containers("assets/images/meat.png", 'Beef Bone', "1kg, Priceg", "\$ 4.99", "assets/svgs/plus.svg"),
-                    containers("assets/images/chicken.png", 'Broiler checken', "1kg, Priceg", "\$ 4.99", "assets/svgs/plus.svg"),
+                    containers("assets/images/meat.png", 'Beef Bone', "1kg, Priceg", "\$ 4.99", "assets/svgs/plus.svg",context),
+                    containers("assets/images/chicken.png", 'Broiler checken', "1kg, Priceg", "\$ 4.99", "assets/svgs/plus.svg",context),
                   ],
                 )
               ],
