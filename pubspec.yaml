@@ -38,3 +38,8 @@ flutter:
         - asset: assets/fonts/gilroy/Gilroy-Light.ttf
         - asset: assets/fonts/gilroy/Gilroy-Regular.ttf
         - asset: assets/fonts/gilroy/Gilroy-Medium.ttf
+
+
+    - family: Aclonica
+      fonts:
+        - asset: assets/fonts/Aclonica/Aclonica-Regular.ttf

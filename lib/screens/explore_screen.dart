@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:online_groceries_market/utils/resource_media.dart';
 
 class ExploreScreen extends StatelessWidget {
   const ExploreScreen({super.key});
@@ -44,14 +45,14 @@ class ExploreScreen extends StatelessWidget {
               Row(
                 children: [
                   containers(
-                    "assets/images/Eggs.png",
+                    ResourceMedia.eggsImage,
                     "Egg chicken Red",
                     "4pcs, Price",
                     "\$1.99",
                     "assets/svgs/plus.svg",
                   ),
                   containers(
-                    "assets/images/white.png",
+                    ResourceMedia.whiteEggs,
                     "Egg chicken White",
                     "180g, Price",
                     "\$1.50",
@@ -62,7 +63,7 @@ class ExploreScreen extends StatelessWidget {
               Row(
                 children: [
                   containers(
-                    "assets/images/pasta.png",
+                    ResourceMedia.pastaImage,
                     "Egg Pasta           "
                         "     ",
                     "30gm, Price",
@@ -70,7 +71,7 @@ class ExploreScreen extends StatelessWidget {
                     "assets/svgs/plus.svg",
                   ),
                   containers(
-                    "assets/images/noodles.png",
+                    ResourceMedia.noodlesImage,
                     "Egg Noddles       "
                         "    ",
                     "2L, Price",
@@ -82,14 +83,14 @@ class ExploreScreen extends StatelessWidget {
               Row(
                 children: [
                   containers(
-                    "assets/images/mayonnais.png",
+                    ResourceMedia.mayonnaiseImage,
                     "Mayonnais Eggless",
                     "2pcs, Price",
                     "\$5.90",
                     "assets/svgs/plus.svg",
                   ),
                   containers(
-                    "assets/images/noodles2.png",
+                    ResourceMedia.noodles2Image,
                     "Egg Noodles      "
                         "         ",
                     "1pcs, Price",
